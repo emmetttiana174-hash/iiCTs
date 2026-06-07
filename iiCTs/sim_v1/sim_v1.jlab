@@ -1,0 +1,14 @@
+ProjectName sim_v1
+TubeType hot
+CTType CBCT
+TubeFolder tube
+SpectrumFolder spectrum
+DetectorFolder detector
+CTFolder ct
+ReconFolder recon
+MACFolder mac
+ProjectPath /home/day/MySharedFolder/iiCTs_v2025.8.22/iiCTs
+SystemScriptPath /home/day/MySharedFolder/iiCTs_v2025.8.22/user/sim_v1
+SystemMaterialPath /home/vgate/software_gy/share/iiCTs/CTISS/materials
+TubeDatabasePath /home/vgate/software_gy/share/iiCTs/database/tube
+SpectrumDatabasePath /home/vgate/software_gy/share/iiCTs/database/XraySpectrum

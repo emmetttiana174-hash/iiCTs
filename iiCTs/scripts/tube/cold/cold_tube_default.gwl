@@ -1,0 +1,35 @@
+# Anode
+AnodeMaterial         Tungsten      # Material of the anode plate
+AnodeTiltAngle        6             # Tilt angle of anode target surface (degrees)
+AnodeRadius           10            # Radius of anode target surface (mm)
+AnodeThickness        5.857         # Thickness of anode target surface (mm)
+
+# Cathode
+CathodeMaterial       CNT           # Cold cathode emitter material
+CathodeRadius         5             # Radius of the emitter (mm)
+CathodeThickness      2.9           # Thickness of the emitter (mm)
+SubstrateRadius       10            # Radius of emitter base (mm)
+SubstrateThickness    2             # Thickness of emitter base (mm)
+
+# FocusElectrode
+FocusMaterial         Tungsten      # Material of the focusing electrode
+FocusRadius           10            # Outer diameter of focus electrode (mm)
+FocusThickness        3             # Thickness of focus electrode (mm)
+FocusHoleRadius       8             # Radius of focus electrode holes (mm)
+
+# Gate
+GateMaterial          Tungsten      # Material of the gate
+GateRadius            10            # Outer diameter of the gate (mm)
+GateThickness         3             # Thickness of gate material (mm)
+GateHoleRadius        0.8           # Radius of gate holes (mm)
+
+# Simulation
+CathodeToAnode        26            # Distance from emitter to anode target (mm)
+AnodePotential        80            # Operating voltage of anode (KeV)
+CathodePotential      0             # Operating voltage of emitter (KeV)
+FocusPotential        0             # Operating voltage of focus electrode (KeV)
+GatePotential         0.5           # Operating voltage of gate (KeV)
+
+# IO
+OutputPath            /home/vgate/software_gy/share/CTISS/user/test/tube   # Path to simulation output
+OutputFilename        test          # Filename of simulation output

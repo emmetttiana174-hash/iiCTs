@@ -1,0 +1,36 @@
+# Geometry parameters
+AnodeAngle           8            # Anode angle (degree)
+TubeVoltage         100           # Operating voltage (kVp)
+AnodeMaterial        Tungsten     # Anode material
+TargetMode            0           # Target mode (0: reflective, 1: transmissive)
+
+# Virtual detector parameters
+DetMaterial          vacuum       # Detector material
+DetThickness         0.1          # Detector thickness (mm)
+DetSizeX            20            # Detector X size (mm)
+DetSizeY            20            # Detector Y size (mm)
+
+# Filtration layers
+Filter1Material      Al           # First filter material
+Filter1Thickness     2          # First filter thickness (mm)
+Filter1Position      2          # First filter distance from anode (mm)
+Filter2Material      Cu           # Second filter material
+Filter2Thickness     2          # Second filter thickness (mm)
+Filter2Position      3          # Second filter distance from anode (mm)
+
+# Physics processes
+EnableIonisation     1            # G4eIonisation: electron ionization
+EnableBremsstrahlung 1            # G4eBremsstrahlung: X-ray emission from deceleration
+EnableScatter        1            # G4eMultipleScattering: electron scattering
+EnableAnnihilation   1            # G4eplusAnnihilation: positron annihilation
+
+# Simulation parameters
+ElectronCount   10000       # Number of simulated electrons
+GridSizeX              1          # Grid size in X (mm)
+GridSizeY              1          # Grid size in Y (mm)
+EnergyBinSize        0.5          # Energy bin size (keV)
+
+# Input/Output
+InputFilePath  /home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/input/W_5_80kev_educate.txt     # Path to input file
+OutputFolder   /home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/output         # Path to output folder
+OutputFilename test                                                      # Output file name

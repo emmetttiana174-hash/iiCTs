@@ -1,0 +1,8 @@
+/home/day/CTGUI/test2/iiCTs_v2025.8.22/iiCTs/build/CMakeFiles/install/strip.dir
+/home/day/CTGUI/test2/iiCTs_v2025.8.22/iiCTs/build/CMakeFiles/install/local.dir
+/home/day/CTGUI/test2/iiCTs_v2025.8.22/iiCTs/build/CMakeFiles/install.dir
+/home/day/CTGUI/test2/iiCTs_v2025.8.22/iiCTs/build/CMakeFiles/list_install_components.dir
+/home/day/CTGUI/test2/iiCTs_v2025.8.22/iiCTs/build/CMakeFiles/rebuild_cache.dir
+/home/day/CTGUI/test2/iiCTs_v2025.8.22/iiCTs/build/CMakeFiles/edit_cache.dir
+/home/day/CTGUI/test2/iiCTs_v2025.8.22/iiCTs/build/CMakeFiles/iiCTs.dir
+/home/day/CTGUI/test2/iiCTs_v2025.8.22/iiCTs/build/CMakeFiles/iiCTs_autogen.dir

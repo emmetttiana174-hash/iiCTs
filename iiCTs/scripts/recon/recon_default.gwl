@@ -1,0 +1,22 @@
+# Geometry
+PixelCountX         512           # Number of pixels in X direction
+PixelCountY         512           # Number of pixels in Y direction
+PixelSizeX          0.6           # Pixel size in X (mm)
+PixelSizeY          0.6           # Pixel size in Y (mm)
+LayerThickness      1             # Reconstructed layer thickness (mm)
+XOffset             0             # Reconstruction center offset in X (mm)
+YOffset             0             # Reconstruction center offset in Y (mm)
+ZOffset             0             # Reconstruction center offset in Z (mm)
+
+# Reconstruction Parameters
+ReconAlgorithm      FAK           # Reconstruction algorithm: FBP FDK WFBP IRT
+ReconKernel         Ramp          # Reconstruction filter: ramp standard soft bone hann hming
+MuWater             0.02          # Attenuation coefficient for water
+HUOffset            -1000         # Attenuation coefficient offset for air
+
+# IO
+DetectorGeometry    /home/vgate/software_gy/share/CTISS/user/test/tube.gwl
+CTGeometry          /home/vgate/software_gy/share/CTISS/user/test/CT.gwl
+InputPath           /home/vgate/software_gy/share/CTISS/user/input
+OutputPath          /home/vgate/software_gy/share/CTISS/user/input
+OutputFilename        result       # Filename of simulation output

@@ -1,0 +1,40 @@
+# Generated Mac file from GWL conversion
+# Conversion performed by iiCTs TransSpectrum module
+
+# Physics processes configuration
+/testem/phys/EnableIonisation 1
+/testem/phys/EnableBremsstrahlung 1
+/testem/phys/EnableScatter 1
+/testem/phys/EnableAnnihilation 1
+
+# Input configuration
+/Input/setInputFilePath /home/day/CTGUI/test2/iiCTs_V3/Geant4Object/SpectrumSimulation/input/W_5_80kev_educate.txt
+
+# Output configuration
+/Output/setOutputFilePath /home/day/CTGUI/test2/iiCTs_V3/Geant4Object/SpectrumSimulation/output/test
+#/Output/setGridSizeX 1 mm
+#/Output/setGridSizeY 1 mm
+#/Output/setEnergyBinSize 0.5
+
+# Geometry configuration
+/Anode/setAnodeAngle 8
+/Anode/setAnodeMaterial W
+#/Target/setTargetMode 0
+
+# Detector configuration
+/detector/setDetectorMaterial Galactic
+/detector/setDetectorZ 0.05 mm
+/detector/setDetectorX 10 mm
+/detector/setDetectorY 10 mm
+
+# Filter configuration
+/Filter/setFilter1Material Al
+/Filter/setFilter1Z 0.05 mm
+/Filter/Filter1Position 0 mm
+/Filter/setFilter2Material Cu
+/Filter/setFilter2Z 0.05 mm
+/Filter/Filter2Position 0.1 mm
+
+# Run simulation
+/run/initialize
+/run/beamOn 100

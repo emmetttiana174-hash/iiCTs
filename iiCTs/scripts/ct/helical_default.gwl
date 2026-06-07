@@ -1,0 +1,100 @@
+增加DSD
+# Detector positioning
+DetModuleNum         3            # Number of detector modules 
+DetectorModuleRadius 1           # Curved detector radius (-1 for flat panel)
+DetDistance        100           # Detector-to-world center distance (DSD - DSO) (mm)
+DetToSource   300     		 # Detector-to-Source center distance (mm)
+
+DetOffsetX          0            # Detector offset in X direction (mm)
+DetOffsetY          0            # Detector offset in Y direction (mm)
+DetYaw              0            # Detector yaw angle (degrees)
+DetPitch            0            # Detector pitch angle (degrees)
+DetRoll             0            # Detector roll angle (degrees)
+DetFilter1           1            # Add filter: 1 for yes  0 for no
+#DetFilter2           1            # Add filter: 1 for yes  0 for no
+#DetFilter3           1            # Add filter: 1 for yes  0 for no
+
+# Detector filtration layers
+DetFilter1Material   Al          # Detector filter 1 material
+DetFilter1SizeX     100          # Detector filter 1 size in X direction (mm)
+DetFilter1SizeY     100          # Detector filter 1 size in Y direction (mm)
+DetFilter1Thick      10         # Detector filter 1 thickness (mm)
+DetFilter1Pos        10         # Detector filter 1 position from surface (mm)
+DetFilter1OffsetX    0           # Detector filter 1 X offset (mm)
+DetFilter1OffsetY    0           # Detector filter 1 Y offset (mm)
+
+#DetFilter2Material   Al          # Detector filter 2 material
+#DetFilter2SizeX     100          # Detector filter 2 size in X direction (mm)
+#DetFilter2SizeY     100          # Detector filter 2 size in Y direction (mm)
+#DetFilter2Thick      0.1         # Detector filter 2 thickness (mm)
+#DetFilter2Pos        0.0         # Detector filter 2 position from surface (mm)
+#DetFilter2OffsetX    0           # Detector filter 2 X offset (mm)
+#DetFilter2OffsetY    0           # Detector filter 2 Y offset (mm)
+
+# Phantom configuration
+PhantomScale         0.5           # Scaling factor for phantom size
+PhantomOffsetX       0           # Phantom offset in X direction (mm)
+PhantomOffsetY       0           # Phantom offset in Y direction (mm)
+PhantomOffsetZ       0           # Phantom offset in Z direction (mm)
+#PhantomRotX          0           # Phantom rotation in X axis (degrees)
+#PhantomRotY          0           # Phantom rotation in Y axis (degrees)
+#PhantomRotZ          0           # Phantom rotation in Z axis (degrees)
+
+# Tube filtration (pre-filter)
+TubeFilter1Material  Al          # Tube filter 1 material
+TubeFilter1SizeX    10          # Tube filter 1 size in X direction (mm)
+TubeFilter1SizeY    10          # Tube filter 1 size in Y direction (mm)
+TubeFilter1Thick     10         # Tube filter 1 thickness (mm)
+TubeFilter1Pos       10         # Tube filter 1 position from surface (mm)
+TubeFilter1OffsetX   0           # Tube filter 1 X offset (mm)
+TubeFilter1OffsetY   0           # Tube filter 1 Y offset (mm)
+
+#TubeFilter2Material  Al          # Tube filter 2 material
+#TubeFilter2SizeX    100          # Tube filter 2 size in X direction (mm)
+#TubeFilter2SizeY    100          # Tube filter 2 size in Y direction (mm)
+#TubeFilter2Thick     0.1         # Tube filter 2 thickness (mm)
+#TubeFilter2Pos       0.0         # Tube filter 2 position from surface (mm)
+#TubeFilter2OffsetX   0           # Tube filter 2 X offset (mm)
+#TubeFilter2OffsetY   0           # Tube filter 2 Y offset (mm)
+
+增加上下锥角左右扇角、射线源偏移
+# X-ray tube parameters
+#FanAngle            60           # Fan angle (degrees)
+#ConeAngle           10           # Cone angle in Z (degrees)
+LeftFanAngle    10		 # Fan angle (degrees)
+RightFanAngle    10		 # Fan angle (degrees)
+LowConeAngle           10           # Cone angle in Z (degrees)
+HighConeAngle           10           # Cone angle in Z (degrees)
+TubeDistance       150           # Tube distance from rotation center (mm)
+TubeXOffset      0		# TubeXOffset
+TubeYOffset      0		# TubeYOffset
+TubeYaw              0           # Tube yaw angle (degrees)
+TubePitch            0           # Tube pitch angle (degrees)
+TubeRoll             0           # Tube roll angle (degrees)
+
+删除StartAngle
+# Scan protocol
+TotalViews         80           # Total exposure views
+CircleViews        180           # Views per rotation circle
+#StartAngle           0           # Starting angle of exposure
+StartIndex         100           # Starting index for simulation
+HelicalPitch        1          # CT helical pitch
+BedDirection         0           # Phantom bed direction (0 or 1)
+PhotonCount   100           # Number of photons per view
+
+# Physics Processes
+PhotoEffect           0           # Enable Photoelectric Effect
+ComptonScatter        0           # Enable Compton Scattering
+RayleighScatter       0           # Enable Rayleigh Scattering
+Ionization          0           # Enable Gamma Conversion (e⁺/e⁻ pair)
+MultipleScattering           0           # Enable X-ray Reflection (optical simulation)
+
+将PhantomScript改成g4dcm文件路径、增加光谱pos路径
+# IO Paths
+DetectorPath  C:/Users/31243/Desktop/Geant4_project/scripts/detector/integrat_arc_default.gwl            # Detector path
+SpectrumPath   /home/vgate/software_gy/share/CTISS/user/test            # X-ray spectrum path
+SpectrumPosPath   /home/vgate/software_gy/share/CTISS/user/test            # X-ray spectrum path
+PhantomPath    /home/vgate/software_gy/share/CTISS/user/test            # Phantom data path
+G4dcmPath    /home/vgate/software_gy/share/CTISS/user/test            # Phantom data path
+#PhantomScript  /home/vgate/software_gy/share/CTISS/user/test            # Phantom script path
+OutputPath     /home/vgate/software_gy/share/CTISS/user/test            # Simulation output path

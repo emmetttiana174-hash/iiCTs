@@ -1,0 +1,47 @@
+/control/verbose 2
+/run/verbose 2
+/tracking/verbose 0
+/detector/setObjectAngle 100
+/detector/setPitch 1
+/detector/setDetectorRotationAngle 0 0 0
+/detector/setDetectorXSize 100
+/detector/setDetectorYSize 100
+/detector/setDetectorZSize 10
+/detector/setDetectorXBias 0
+/detector/setDetectorYBias 0
+#/detector/setDetectorZBias 0
+/detector/setDSD 300
+/detector/setDSO 150
+/detector/setPixelXSize 10
+/detector/setPixelYSize 10
+/detector/setPixelZSize 10
+/detector/material CsI_Tl
+#/detector/material CustomMat 2.5 2 Fe 26 55.845 7 Cu 29 63.546 3
+#/tube/setDSO -15
+/tube/setUOffset 0
+/tube/setVOffset 0
+#/tube/setTubeRotationAngle 0 0 0 deg
+/tube/setTubeXRotationAngle 45
+/tube/setTubeYRotationAngle 0
+/tube/setTubeZRotationAngle 0
+/tube/setLeftAngle 0
+/tube/setRightAngle 0
+/tube/setTubeConeAngle 0
+/material/nist/listMaterials
+/run/initialize
+/run/setCut          0.1 mm
+/vis/open OGL 600x600-0+0
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/drawVolume
+/vis/viewer/set/viewpointThetaPhi -90. 0.
+/vis/viewer/zoom 1.4
+/vis/scene/add/trajectories
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+/vis/scene/endOfEventAction accumulate
+/vis/viewer/set/autoRefresh true
+/vis/verbose warnings
+

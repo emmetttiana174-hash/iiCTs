@@ -1,0 +1,71 @@
+/vis/open OGL 600x600-0+0
+/vis/drawVolume
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/scene/create
+/vis/scene/add/volume
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+/vis/sceneHandler/attach
+/vis/viewer/set/viewpointVector -1 0 0
+/vis/viewer/set/lightsVector -1 0 0
+/vis/viewer/set/upVector 0 0 1
+/vis/viewer/set/projection orthogonal
+/vis/viewer/zoomTo 1.4
+/vis/viewer/set/style surface
+/vis/viewer/set/hiddenMarker true
+/vis/viewer/set/hiddenEdge true
+/detector/setmultiple 0.5
+/detector/setDetectorModuleNum 3
+/detector/setDetectorRadius -1
+/detector/setDSD 300
+/detector/setDSO 150
+/detector/setDDO 100
+/detector/setDetectorXBias 0
+/detector/setDetectorYBias 0
+/detector/setFilter 1
+/detector/setFilterXSize 100
+/detector/setFilterYSize 100
+/detector/setFilterZSize 10
+/detector/setFilterPos 10
+/detector/setFilterXBias 0
+/detector/setFilterYBias 0
+/detector/setFilterMaterial Al
+/detector/setTubeFilterMaterial Al
+/detector/setTubeFilterXSize 10
+/detector/setTubeFilterYSize 10
+/detector/setTubeFilterZSize 10
+/detector/setTubeFilterPos 10
+/detector/setTubeFilterXBias 0
+/detector/setTubeFilterYBias 0
+/detector/setObjectXBias 0
+/detector/setObjectYBias 0
+/detector/setObjectZBias 0
+/detector/setDetectorRotationAngle 0 0 0
+/tube/setUOffset 0
+/tube/setVOffset 0
+/tube/setOrder {order}
+/tube/setTotalsource 5
+/tube/setSourceLength 100
+/tube/setOffcenter 0
+/tube/setTubeXRotationAngle 0
+/tube/setTubeYRotationAngle 0
+/tube/setTubeZRotationAngle 0
+/tube/setLeftAngle 10
+/tube/setRightAngle 10
+/tube/setLowConeAngle 10
+/tube/setHigConeAngle 10
+/detector/BedDirection 0
+/testem/PhotoEffect 0
+/testem/ComptonScatter 0
+/testem/RayleighScatter 0
+/testem/Ionization 0
+/testem/MultipleScattering 0
+/detector/G4dcm /home/vgate/software_gy/share/CTISS/user/test
+/detector/SpectrumPos /home/vgate/software_gy/share/CTISS/user/test
+/detector/SpectrumEnergy /home/vgate/software_gy/share/CTISS/user/test
+/detector/Output /home/vgate/software_gy/share/CTISS/user/test
+/run/initialize
+/run/beamOn 10

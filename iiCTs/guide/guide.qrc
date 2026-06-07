@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/guide">
+        <file>CTReconstruction.md</file>
+        <file>CTScanSimulation.md</file>
+        <file>DetectorModel.md</file>
+        <file>Home.md</file>
+        <file>SpectrumSimulation.md</file>
+        <file>TubeSimulation.md</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,31 @@
+# Anode
+AnodeMaterial         Tungsten   # Material of the anode plate
+AnodeTiltAngle        5          # Tilt angle of anode target surface (degrees)
+AnodeRadius           17         # Radius of anode target surface (mm)
+AnodeThickness        5          # Thickness of anode target surface (mm)
+
+# Cathode
+CathodeMaterial      Tungsten   # Material of the filament
+CathodeRadius        0.5        # Radius of the filament (mm)
+CathodeLength        5.715      # Length of the filament (mm)
+CathodeTurns         10         # Number of filament coils
+
+# FocusingCup
+FocusMaterial        Tungsten   # Material of the focusing cup
+FocusRadius          7.85       # Outer radius of focusing cup (mm)
+FocusThickness       9.8        # Thickness of focusing cup (mm)
+FocusHoleRadius      3          # Radius of hole for filament installation (mm)
+FocusDepth           8.5        # Depth of hole for filament installation (mm)
+
+# Simulation
+FilamentTemp         2500       # Operating temperature of the filament (Kelvin)
+CathodeToAnode       71.7       # Distance from filament to anode target (mm)
+AnodePotential       80         # Operating voltage of anode (KeV)
+CathodePotential     0          # Operating voltage of filament (KeV)
+FocusPotential       0          # Operating voltage of focusing cup (KeV)
+
+# IO
+OutputPath            /home/vgate/software_gy/share/CTISS/user/test/tube   # Path to simulation output
+OutputFilename        test       # Filename of simulation output
+
+

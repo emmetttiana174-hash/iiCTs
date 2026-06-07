@@ -1,0 +1,14 @@
+ProjectName sim_v1
+TubeType hot
+CTType helical
+TubeFolder tube
+SpectrumFolder spectrum
+DetectorFolder detector
+CTFolder ct
+ReconFolder recon
+MACFolder mac
+ProjectPath /home/day/MySharedFolder/iiCTs_v2025.8.22/sim_v1
+SystemScriptPath /home/day/MySharedFolder/iiCTs_v2025.8.22/user
+SystemMaterialPath /home/vgate/software_gy/share/iiCTs/CTISS/materials
+TubeDatabasePath /home/vgate/software_gy/share/iiCTs/database/tube
+SpectrumDatabasePath /home/vgate/software_gy/share/iiCTs/database/XraySpectrum

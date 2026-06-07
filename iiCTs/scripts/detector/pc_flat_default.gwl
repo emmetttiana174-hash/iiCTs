@@ -1,0 +1,17 @@
+# Geometry
+DetCountX           768          # Number of detector units along X
+DetCountY           768          # Number of detector units along Y
+DetUnitSizeX        0.2          # Detector unit size in X (mm)
+DetUnitSizeY        0.2          # Detector unit size in Y (mm)
+DetUnitThickness    0.6          # Detector unit thickness (mm)
+DetectorRadius      -1           # Curved detector radius (-1 for flat panel)
+
+# Materials
+DetectorMaterial     GOS         # Detector material
+PCCT                 1           # Is it a photon counting detector: 0 for No, 1 for Yes
+PCCTTh1              20          # Photon counting detector energy threshold 1  KeV  
+PCCTTh2              60          # Photon counting detector energy threshold 2 
+
+# Input/Output
+OutputFolder   /home/vgate/software_gy/share/CTISS/user/test/tube        # Path to output folder
+OutputFilename test                                                      # Output file name

@@ -1,0 +1,37 @@
+/detector/setmultiple 1
+/detector/setDetectorModuleNum 3
+/detector/setDetectorRadius -1
+/detector/setDSO 595
+/detector/setDDO 490
+/detector/setDetectorXBias 0
+/detector/setDetectorYBias 0
+/detector/setFilter 1
+/detector/setFilterXSize 100
+/detector/setFilterYSize 100
+/detector/setFilterZSize 0.1
+/detector/setFilterPos 0.0
+/detector/setFilterXBias 0
+/detector/setFilterYBias 0
+/detector/setFilterMaterial Al
+/detector/setTubeFilterMaterial Al
+/detector/setTubeFilterXSize 100
+/detector/setTubeFilterYSize 100
+/detector/setTubeFilterZSize 0.1
+/detector/setTubeFilterPos 0.0
+/detector/setTubeFilterXBias 0
+/detector/setTubeFilterYBias 0
+/detector/setObjectXBias 0
+/detector/setObjectYBias 0
+/detector/setObjectZBias 0
+/detector/setDetectorRotationAngle 0 0 0
+/tube/setTubeXRotationAngle 0
+/tube/setTubeYRotationAngle 0
+/tube/setTubeZRotationAngle 0
+/detector/BedDirection 0
+/testem/PhotoEffect 1
+/testem/ComptonScatter 1
+/testem/RayleighScatter 1
+/detector/SpectrumEnergy /home/vgate/software_gy/share/CTISS/user/test
+/detector/Output /home/vgate/software_gy/share/CTISS/user/test
+/run/initialize
+/run/beamOn 10000000

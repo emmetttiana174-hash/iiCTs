@@ -1,0 +1,8 @@
+/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/build/CMakeFiles/install/strip.dir
+/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/build/CMakeFiles/install/local.dir
+/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/build/CMakeFiles/install.dir
+/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/build/CMakeFiles/list_install_components.dir
+/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/build/CMakeFiles/rebuild_cache.dir
+/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/build/CMakeFiles/edit_cache.dir
+/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/build/CMakeFiles/GammaTherapy.dir
+/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/build/CMakeFiles/GammaTherapy_autogen.dir

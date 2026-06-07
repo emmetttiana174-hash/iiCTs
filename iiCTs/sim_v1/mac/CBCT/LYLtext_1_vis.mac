@@ -1,0 +1,66 @@
+/detector/setmultiple 0.5
+/detector/setDetectorModuleNum 3
+/detector/setDetectorRadius 1
+/detector/setDSD 300
+/detector/setDSO 150
+/detector/setDDO 100
+/detector/setDetectorXBias 0
+/detector/setDetectorYBias 0
+/detector/setFilter 1
+/detector/setFilterXSize 100
+/detector/setFilterYSize 100
+/detector/setFilterZSize 10
+/detector/setFilterPos 10
+/detector/setFilterXBias 0
+/detector/setFilterYBias 0
+/detector/setFilterMaterial Al
+/detector/setTubeFilterMaterial Al
+/detector/setTubeFilterXSize 10
+/detector/setTubeFilterYSize 10
+/detector/setTubeFilterZSize 10
+/detector/setTubeFilterPos 10
+/detector/setTubeFilterXBias 0
+/detector/setTubeFilterYBias 0
+/detector/setObjectXBias 0
+/detector/setObjectYBias 0
+/detector/setObjectZBias 0
+/detector/setDetectorRotationAngle 0 0 0
+/tube/setUOffset 0
+/tube/setVOffset 0
+/tube/setTubeXRotationAngle 0
+/tube/setTubeYRotationAngle 0
+/tube/setTubeZRotationAngle 0
+/detector/setPitch 1
+/tube/setLeftAngle 10
+/tube/setRightAngle 10
+/tube/setLowConeAngle 10
+/tube/setHigConeAngle 10
+/detector/BedDirection 0
+/testem/PhotoEffect 0
+/testem/ComptonScatter 0
+/testem/RayleighScatter 0
+/testem/Ionization 0
+/testem/MultipleScattering 0
+/detector/G4dcm /home/vgate/software_gy/share/CTISS/user/test
+/detector/SpectrumPos /home/vgate/software_gy/share/CTISS/user/test
+/detector/SpectrumEnergy /home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/output
+/detector/Output /home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/CBCT/output
+/detector/setObjectAngle1 0 0 90
+/run/initialize
+
+# Visualization commands
+/vis/open OGL 600x600-0+0
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/drawVolume
+/vis/viewer/set/viewpointThetaPhi -90. 0.
+/vis/viewer/zoom 30.0
+/vis/scene/add/axes 0 0 0 5 cm
+/vis/scene/add/trajectories
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+/vis/scene/endOfEventAction accumulate
+/vis/viewer/set/autoRefresh true
+/vis/verbose warnings

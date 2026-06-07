@@ -1,0 +1,400 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5b8c0/fast && /usr/bin/make -f CMakeFiles/cmTC_5b8c0.dir/build.make CMakeFiles/cmTC_5b8c0.dir/build
+make[1]: 进入目录“/home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_5b8c0.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_5b8c0.dir/src.c.o   -c /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_5b8c0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b8c0.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_5b8c0.dir/src.c.o  -o cmTC_5b8c0 
+/usr/bin/ld: CMakeFiles/cmTC_5b8c0.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_5b8c0.dir/build.make:87：cmTC_5b8c0] 错误 1
+make[1]: 离开目录“/home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_5b8c0/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9b642/fast && /usr/bin/make -f CMakeFiles/cmTC_9b642.dir/build.make CMakeFiles/cmTC_9b642.dir/build
+make[1]: 进入目录“/home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_9b642.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_9b642.dir/src.c.o   -c /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9b642
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b642.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_9b642.dir/src.c.o  -o cmTC_9b642 
+/usr/bin/ld: CMakeFiles/cmTC_9b642.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_9b642.dir/build.make:87：cmTC_9b642] 错误 1
+make[1]: 离开目录“/home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_9b642/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ab90b/fast && /usr/bin/make -f CMakeFiles/cmTC_ab90b.dir/build.make CMakeFiles/cmTC_ab90b.dir/build
+make[1]: 进入目录“/home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_ab90b.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ab90b.dir/src.c.o   -c /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ab90b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab90b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_ab90b.dir/src.c.o  -o cmTC_ab90b 
+/usr/bin/ld: CMakeFiles/cmTC_ab90b.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ab90b.dir/build.make:87：cmTC_ab90b] 错误 1
+make[1]: 离开目录“/home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_ab90b/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5ab09/fast && /usr/bin/make -f CMakeFiles/cmTC_5ab09.dir/build.make CMakeFiles/cmTC_5ab09.dir/build
+make[1]: 进入目录“/home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_5ab09.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_5ab09.dir/src.c.o   -c /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_5ab09
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ab09.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_5ab09.dir/src.c.o  -o cmTC_5ab09 
+/usr/bin/ld: CMakeFiles/cmTC_5ab09.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_5ab09.dir/build.make:87：cmTC_5ab09] 错误 1
+make[1]: 离开目录“/home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_5ab09/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_70c9f/fast && /usr/bin/make -f CMakeFiles/cmTC_70c9f.dir/build.make CMakeFiles/cmTC_70c9f.dir/build
+make[1]: 进入目录“/home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_70c9f.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_70c9f.dir/src.c.o   -c /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_70c9f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70c9f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_70c9f.dir/src.c.o  -o cmTC_70c9f 
+/usr/bin/ld: CMakeFiles/cmTC_70c9f.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_70c9f.dir/build.make:87：cmTC_70c9f] 错误 1
+make[1]: 离开目录“/home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/Script/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_70c9f/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/HelicalCT/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_62b43/fast && /usr/bin/make -f CMakeFiles/cmTC_62b43.dir/build.make CMakeFiles/cmTC_62b43.dir/build
+make[1]: 进入目录“/home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/HelicalCT/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_62b43.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_62b43.dir/src.c.o   -c /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/HelicalCT/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_62b43
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62b43.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_62b43.dir/src.c.o  -o cmTC_62b43 
+/usr/bin/ld: CMakeFiles/cmTC_62b43.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_62b43.dir/build.make:87：cmTC_62b43] 错误 1
+make[1]: 离开目录“/home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/HelicalCT/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_62b43/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/HelicalCT/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_754f5/fast && /usr/bin/make -f CMakeFiles/cmTC_754f5.dir/build.make CMakeFiles/cmTC_754f5.dir/build
+make[1]: 进入目录“/home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/HelicalCT/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_754f5.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_754f5.dir/src.c.o   -c /home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/HelicalCT/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_754f5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_754f5.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_754f5.dir/src.c.o  -o cmTC_754f5 
+/usr/bin/ld: CMakeFiles/cmTC_754f5.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_754f5.dir/build.make:87：cmTC_754f5] 错误 1
+make[1]: 离开目录“/home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/HelicalCT/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_754f5/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/HelicalCT/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_55c37/fast && /usr/bin/make -f CMakeFiles/cmTC_55c37.dir/build.make CMakeFiles/cmTC_55c37.dir/build
+make[1]: 进入目录“/home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/HelicalCT/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_55c37.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_55c37.dir/src.c.o   -c /home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/HelicalCT/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_55c37
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55c37.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_55c37.dir/src.c.o  -o cmTC_55c37 
+/usr/bin/ld: CMakeFiles/cmTC_55c37.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_55c37.dir/build.make:87：cmTC_55c37] 错误 1
+make[1]: 离开目录“/home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/HelicalCT/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_55c37/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/HelicalCT/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cc687/fast && /usr/bin/make -f CMakeFiles/cmTC_cc687.dir/build.make CMakeFiles/cmTC_cc687.dir/build
+make[1]: 进入目录“/home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/HelicalCT/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_cc687.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_cc687.dir/src.c.o   -c /home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/HelicalCT/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_cc687
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc687.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_cc687.dir/src.c.o  -o cmTC_cc687 
+/usr/bin/ld: CMakeFiles/cmTC_cc687.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_cc687.dir/build.make:87：cmTC_cc687] 错误 1
+make[1]: 离开目录“/home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/HelicalCT/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_cc687/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/HelicalCT/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9738f/fast && /usr/bin/make -f CMakeFiles/cmTC_9738f.dir/build.make CMakeFiles/cmTC_9738f.dir/build
+make[1]: 进入目录“/home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/HelicalCT/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_9738f.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_9738f.dir/src.c.o   -c /home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/HelicalCT/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9738f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9738f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_9738f.dir/src.c.o  -o cmTC_9738f 
+/usr/bin/ld: CMakeFiles/cmTC_9738f.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_9738f.dir/build.make:87：cmTC_9738f] 错误 1
+make[1]: 离开目录“/home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/HelicalCT/build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_9738f/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

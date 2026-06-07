@@ -1,0 +1,19 @@
+{
+	"BUILD_DIR" : "/home/day/CTGUI/test2/iiCTs_v2025.8.22/iiCTs/build/iiCTs_autogen",
+	"CMAKE_BINARY_DIR" : "/home/day/CTGUI/test2/iiCTs_v2025.8.22/iiCTs/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/day/CTGUI/test2/iiCTs_v2025.8.22/iiCTs/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/day/CTGUI/test2/iiCTs_v2025.8.22/iiCTs",
+	"CMAKE_SOURCE_DIR" : "/home/day/CTGUI/test2/iiCTs_v2025.8.22/iiCTs",
+	"INCLUDE_DIR" : "/home/day/CTGUI/test2/iiCTs_v2025.8.22/iiCTs/build/iiCTs_autogen/include",
+	"INPUTS" : [ "/home/day/CTGUI/test2/iiCTs_v2025.8.22/iiCTs/version/version.md" ],
+	"LOCK_FILE" : "/home/day/CTGUI/test2/iiCTs_v2025.8.22/iiCTs/build/CMakeFiles/iiCTs_autogen.dir/AutoRcc_version_TIYS5KUUKJ_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "version" ],
+	"OUTPUT_CHECKSUM" : "TIYS5KUUKJ",
+	"OUTPUT_NAME" : "qrc_version.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/day/CTGUI/test2/iiCTs_v2025.8.22/iiCTs/build/CMakeFiles/iiCTs_autogen.dir/AutoRcc_version_TIYS5KUUKJ_Used.txt",
+	"SOURCE" : "/home/day/CTGUI/test2/iiCTs_v2025.8.22/iiCTs/version/version.qrc",
+	"VERBOSITY" : 0
+}

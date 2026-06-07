@@ -1,0 +1,8 @@
+/home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/LinearCT/build/CMakeFiles/install/strip.dir
+/home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/LinearCT/build/CMakeFiles/install/local.dir
+/home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/LinearCT/build/CMakeFiles/install.dir
+/home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/LinearCT/build/CMakeFiles/list_install_components.dir
+/home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/LinearCT/build/CMakeFiles/rebuild_cache.dir
+/home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/LinearCT/build/CMakeFiles/edit_cache.dir
+/home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/LinearCT/build/CMakeFiles/GammaTherapy.dir
+/home/day/CTGUI/test2/iiCTs_v2025.8.22/Geant4Object/LinearCT/build/CMakeFiles/GammaTherapy_autogen.dir

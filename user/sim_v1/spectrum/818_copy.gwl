@@ -1,0 +1,36 @@
+# Geometry parameters
+AnodeAngle           15            # Anode angle (degree)
+TubeVoltage         100           # Operating voltage (kVp)
+AnodeMaterial        Tungsten     # Anode material
+TargetMode            0           # Target mode (0: reflective, 1: transmissive)
+
+# Virtual detector parameters
+DetMaterial          vacuum       # Detector material
+DetThickness         0.1          # Detector thickness (mm)
+DetSizeX            20            # Detector X size (mm)
+DetSizeY            20            # Detector Y size (mm)
+
+# Filtration layers
+Filter1Material      Al           # First filter material
+Filter1Thickness     2          # First filter thickness (mm)
+Filter1Position      1          # First filter distance from anode (mm)
+Filter2Material      Cu           # Second filter material
+Filter2Thickness     1          # Second filter thickness (mm)
+Filter2Position      2          # Second filter distance from anode (mm)
+
+# Physics processes
+EnableIonisation     1            # G4eIonisation: electron ionization
+EnableBremsstrahlung 1            # G4eBremsstrahlung: X-ray emission from deceleration
+EnableScatter        1            # G4eMultipleScattering: electron scattering
+EnableAnnihilation   1            # G4eplusAnnihilation: positron annihilation
+
+# Simulation parameters
+ElectronCount   1000       # Number of simulated electrons
+GridSizeX              1          # Grid size in X (mm)
+GridSizeY              1          # Grid size in Y (mm)
+EnergyBinSize        0.5          # Energy bin size (keV)
+
+# Input/Output
+InputFilePath  /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/xray/fray4/input/W_5_80kev_educate.txt     # Path to input file
+OutputFolder   /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/xray/fray4/xenergyoutput         # Path to output folder
+OutputFilename test                                                      # Output file name

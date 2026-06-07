@@ -1,0 +1,17 @@
+ProjectName       sim_v1 
+TubeType          hot 
+CTType            helical 
+TubeFolder        tube 
+SpectrumFolder    spectrum 
+DetectorFolder    detector 
+CTFolder          ct 
+ReconFolder       recon 
+MACFolder         mac
+
+
+ProjectPath             /mnt/test.txt 
+SystemScriptPath        /mnt/test.txt 
+SystemMaterialPath      /mnt/test.txt 
+TubeDatabasePath        /mnt/test.txt 
+SpectrumDatabasePath    /mnt/test.txt 
+

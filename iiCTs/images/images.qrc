@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>CT/computer.PNG</file>
+        <file>CT/control.PNG</file>
+        <file>CT/CT.PNG</file>
+        <file>CT/CTISS_log.tif</file>
+        <file>CT/detector.PNG</file>
+        <file>CT/power.PNG</file>
+        <file>CT/tube.PNG</file>
+        <file>background/background_left.png</file>
+        <file>background/background_up.png</file>
+        <file>background/CTISS_logo.png</file>
+        <file>background/icon_close.png</file>
+        <file>background/icon_ct.png</file>
+        <file>background/icon_detector.png</file>
+        <file>background/icon_home.png</file>
+        <file>background/icon_max.png</file>
+        <file>background/icon_min.png</file>
+        <file>background/icon_ray.png</file>
+        <file>background/icon_recon.png</file>
+        <file>background/icon_tube.png</file>
+        <file>background/icon_yiguo.png</file>
+        <file>background/smu_logo.png</file>
+        <file>background/xjtu_logo.png</file>
+        <file>background/yiguo.jpg</file>
+        <file>background/yiguo1.png</file>
+        <file>background/icon_ai.png</file>
+        <file>eduCT/eduCTTubeRun.gif</file>
+        <file>eduCT/eduCTTube.png</file>
+        <file>eduCT/eduCTCathode.png</file>
+        <file>eduCT/eduCTAnode.png</file>
+    </qresource>
+</RCC>

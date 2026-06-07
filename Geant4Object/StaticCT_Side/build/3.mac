@@ -1,0 +1,75 @@
+/detector/setmultiple 0.5
+/detector/setDetectorModuleNum 3
+/detector/setDetectorRadius -1
+/detector/setDSD 300.0
+/detector/setDSO 150
+/detector/setDDO 100
+/detector/material CsI_Tl
+#/detector/material CustomMat 2.5 2 Fe 26 55.845 7 Cu 29 63.546 3
+/detector/setDetectorXSize 100
+/detector/setDetectorYSize 100
+/detector/setDetectorZSize 10
+/detector/setDetectorXBias 0
+/detector/setDetectorYBias 0
+/detector/setPixelXCount 10
+/detector/setPixelYCount 10
+/detector/setPixelXSize 10
+/detector/setPixelYSize 10
+/detector/setPixelZSize 10
+
+/detector/setFilter 1
+/detector/setFilterXSize 100
+/detector/setFilterYSize 100
+/detector/setFilterZSize 10
+/detector/setFilterPos 10
+/detector/setFilterXBias 0
+/detector/setFilterYBias 0
+/detector/setFilterMaterial Air
+
+/detector/setTubeFilterMaterial Air
+/detector/setTubeFilterXSize 10
+/detector/setTubeFilterYSize 10
+/detector/setTubeFilterZSize 10
+/detector/setTubeFilterPos 10
+/detector/setTubeFilterXBias 0
+/detector/setTubeFilterYBias 0
+
+#/detector/setDetectorYRotationAngle 0
+#/detector/setDetectorZRotationAngle 0
+#/detector/setDetectorXRotationAngle 0
+#/detector/setObjectAngle 0
+
+/detector/setObjectAngle1 0 0 90
+/detector/setObjectXBias 0 
+/detector/setObjectYBias 0
+/detector/setObjectZBias 0
+/detector/setPitch 1
+/detector/setDetectorRotationAngle 0 0 0
+
+#/detector/setDetectorZBias 0
+
+#/tube/setDSO -15
+/tube/setUOffset 0
+/tube/setVOffset 0
+#/tube/setTubeRotationAngle 0 0 0 deg
+/tube/setTubeXRotationAngle 0
+/tube/setTubeYRotationAngle 0
+/tube/setTubeZRotationAngle 0
+/tube/setLeftAngle 10
+/tube/setRightAngle 10
+/tube/setLowConeAngle 10
+/tube/setHigConeAngle 10
+
+/detector/BedDirection 0
+/testem/PhotoEffect 0
+/testem/ComptonScatter 0
+/testem/RayleighScatter 0
+/testem/Ionization 0
+/testem/MultipleScattering 0
+
+/detector/G4dcm /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/HelicalCT/build/
+/detector/SpectrumPos  /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/HelicalCT/build/
+/detector/SpectrumEnergy  /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/HelicalCT/2-3/
+/detector/Output /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/HelicalCT/data/
+/run/initialize
+/run/beamOn 1000

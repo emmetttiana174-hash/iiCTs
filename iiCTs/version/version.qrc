@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/version">
+        <file>version.md</file>
+    </qresource>
+</RCC>

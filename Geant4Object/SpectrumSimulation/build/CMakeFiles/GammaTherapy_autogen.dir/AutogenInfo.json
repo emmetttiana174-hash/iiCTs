@@ -1,0 +1,171 @@
+{
+	"BUILD_DIR" : "/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/build/GammaTherapy_autogen",
+	"CMAKE_BINARY_DIR" : "/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_SOURCE_DIR" : "/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation",
+	"HEADERS" : 
+	[
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/GammaTherapy.in",
+			"Mu",
+			"EWIEGA46WW/moc_GammaTherapy.cpp"
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/build/GammaTherapy_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/build/GammaTherapy_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"G4LIB_BUILD_DLL",
+		"G4UI_USE_QT",
+		"G4UI_USE_XM",
+		"G4VIS_USE_OI",
+		"G4VIS_USE_OIQT",
+		"G4VIS_USE_OPENGLQT",
+		"G4VIS_USE_OPENGLX",
+		"G4VIS_USE_OPENGLXM",
+		"G4VIS_USE_QT",
+		"G4VIS_USE_TOOLSSG_QT_GLES",
+		"G4VIS_USE_TOOLSSG_QT_ZB",
+		"G4VIS_USE_TOOLSSG_X11_GLES",
+		"G4VIS_USE_TOOLSSG_X11_ZB",
+		"G4VIS_USE_TOOLSSG_XT_GLES",
+		"G4VIS_USE_TOOLSSG_XT_ZB",
+		"PTL_BUILD_DLL",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NO_DEBUG",
+		"QT_OPENGL_LIB",
+		"QT_WIDGETS_LIB",
+		"QT_X11EXTRAS_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/include",
+		"/home/day/Geant4/geant4-install/include/Geant4",
+		"/usr/include/x86_64-linux-gnu/qt5",
+		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
+		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
+		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
+		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
+		"/usr/include/x86_64-linux-gnu/qt5/QtOpenGL",
+		"/usr/include/x86_64-linux-gnu/qt5/QtX11Extras",
+		"/usr/include",
+		"/usr/include/c++/9",
+		"/usr/include/x86_64-linux-gnu/c++/9",
+		"/usr/include/c++/9/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/9/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : true,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/build/GammaTherapy_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/build/CMakeFiles/GammaTherapy_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 5,
+	"SETTINGS_FILE" : "/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/build/CMakeFiles/GammaTherapy_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/GammaTherapy.cc",
+			"Mu"
+		],
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/src/ActionInitialization.cc",
+			"Mu"
+		],
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/src/DetectorConstruction.cc",
+			"Mu"
+		],
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/src/DetectorConstructionMessenger.cc",
+			"Mu"
+		],
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/src/DetectorHit.cc",
+			"Mu"
+		],
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/src/DetectorMaterials.cc",
+			"Mu"
+		],
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/src/DetectorSD.cc",
+			"Mu"
+		],
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/src/EmbeddingHelper.cc",
+			"Mu"
+		],
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/src/EventAction.cc",
+			"Mu"
+		],
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/src/FilePathManager.cc",
+			"Mu"
+		],
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/src/HistoManager.cc",
+			"Mu"
+		],
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/src/PhysicsList.cc",
+			"Mu"
+		],
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/src/PhysicsListMessenger.cc",
+			"Mu"
+		],
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/src/PrimaryGeneratorAction.cc",
+			"Mu"
+		],
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/src/Run.cc",
+			"Mu"
+		],
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/src/RunAction.cc",
+			"Mu"
+		],
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/src/StepLimiter.cc",
+			"Mu"
+		],
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/src/StepLimiterBuilder.cc",
+			"Mu"
+		],
+		[
+			"/home/day/MySharedFolder/iiCTs_v2025.8.22/Geant4Object/SpectrumSimulation/src/StepLimiterMessenger.cc",
+			"Mu"
+		]
+	],
+	"VERBOSITY" : 0
+}
