@@ -157,6 +157,7 @@ void TerminalWidget::setProcess(QProcess* p)
     });
 
     connect(killButton, &QPushButton::clicked, this, [=]() {
+        emit stopRequested();
         terminalOutput->appendPlainText("[Stopping terminal and related tasks...]");
 
         if (commandThread && commandThread->isRunning()) {

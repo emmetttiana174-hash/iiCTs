@@ -1,6 +1,6 @@
 ProjectName sim_v1
 TubeType hot
-CTType CBCT
+CTType helical
 TubeFolder tube
 SpectrumFolder spectrum
 DetectorFolder detector

@@ -29,6 +29,12 @@
 #include <QFileInfo>
 #include <QProcess>
 #include <QProcessEnvironment>
+#ifdef Q_OS_UNIX
+#include <csignal>
+#include <cerrno>
+#include <cstring>
+#include <unistd.h>
+#endif
 
 ParaSpectrumSimulation::ParaSpectrumSimulation(QWidget *parent)
     : QWidget(parent)
@@ -1699,6 +1705,14 @@ void ParaSpectrumSimulation::resizeEvent(QResizeEvent *event)
 void ParaSpectrumSimulation::setMainWindow(MainWindow *main)
 {
     mainWindow = main;
+    if (mainWindow && mainWindow->terminal())
+    {
+        connect(mainWindow->terminal(),
+                &TerminalWidget::stopRequested,
+                this,
+                &ParaSpectrumSimulation::stopRunningSimulation,
+                Qt::UniqueConnection);
+    }
 }
 
 void ParaSpectrumSimulation::paintEvent(QPaintEvent *event)
@@ -1944,7 +1958,14 @@ void ParaSpectrumSimulation::PlaneRunFunction(const QString &targetPath,
 
     term->appendLine("Build directory: " + buildPath);
 
+    if (activeGeant4Process && activeGeant4Process->state() != QProcess::NotRunning)
+    {
+        term->appendLine("<font color='orange'>A SpectrumSimulation process is already running. Please stop it before starting another one.</font>");
+        return;
+    }
+
     QProcess *geant4Process = new QProcess(this);
+    activeGeant4Process = geant4Process;
     geant4Process->setWorkingDirectory(buildPath);
 
     // 设置环境变量
@@ -2000,6 +2021,10 @@ void ParaSpectrumSimulation::PlaneRunFunction(const QString &targetPath,
                     term->appendLine("<font color='red'>Abnormal termination！</font>");
                 }
 
+                if (activeGeant4Process == geant4Process)
+                {
+                    activeGeant4Process.clear();
+                }
                 geant4Process->deleteLater();
             });
 
@@ -2017,11 +2042,59 @@ void ParaSpectrumSimulation::PlaneRunFunction(const QString &targetPath,
         term->appendLine("- Executable file: " + buildPath + "/" + command.split(" ").first());
         term->appendLine("- Project path used: " + info.ProjectPath);
         term->appendLine("- Detected Geant4 project path: " + geant4ProjectPath);
+        if (activeGeant4Process == geant4Process)
+        {
+            activeGeant4Process.clear();
+        }
         geant4Process->deleteLater();
         return;
     }
 
     term->appendLine("<font color='green'>Geant4 project launched; simulation is now running...</font>");
+}
+
+void ParaSpectrumSimulation::stopRunningSimulation()
+{
+    if (!mainWindow)
+        return;
+
+    TerminalWidget *term = mainWindow->terminal();
+    QString geant4ProjectPath = detectGeant4ProjectPath(allInfo, term);
+    QString buildPath = geant4ProjectPath.isEmpty() ? QString() : geant4ProjectPath + "/build";
+
+    term->appendLine("[SpectrumSimulation] Stop requested.");
+    if (!buildPath.isEmpty())
+    {
+        term->appendLine("[SpectrumSimulation] Build directory: " + buildPath);
+    }
+
+    if (!activeGeant4Process || activeGeant4Process->state() == QProcess::NotRunning)
+    {
+        term->appendLine("<font color='orange'>[SpectrumSimulation] No running Geant4 simulation process was found.</font>");
+        return;
+    }
+
+#ifdef Q_OS_UNIX
+    const qint64 pid = activeGeant4Process->processId();
+    if (pid > 0)
+    {
+        term->appendLine("[SpectrumSimulation] Sending Ctrl+C (SIGINT) to process: " + QString::number(pid));
+        if (::kill(static_cast<pid_t>(pid), SIGINT) == 0)
+        {
+            return;
+        }
+
+        term->appendLine("<font color='red'>[SpectrumSimulation] Failed to send SIGINT: " + QString::fromLocal8Bit(std::strerror(errno)) + "</font>");
+    }
+#endif
+
+    term->appendLine("[SpectrumSimulation] Falling back to terminate().");
+    activeGeant4Process->terminate();
+    if (!activeGeant4Process->waitForFinished(3000))
+    {
+        term->appendLine("[SpectrumSimulation] terminate() timed out, killing process.");
+        activeGeant4Process->kill();
+    }
 }
 
 QString ParaSpectrumSimulation::detectGeant4ProjectPath(const ProjectInfo &info, TerminalWidget *term)

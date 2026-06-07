@@ -113,7 +113,7 @@ private:
 
     QString currentUser;
 
-    TerminalWidget *terminalWidget;
+    TerminalWidget *terminalWidget = nullptr;
     QPlainTextEdit *terminalOutput;
     QLineEdit *inputLine;
     QProcess *process;

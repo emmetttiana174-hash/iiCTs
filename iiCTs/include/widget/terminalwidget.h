@@ -42,6 +42,7 @@ private:
     void showStyledWarning(QWidget *parent, const QString &titleText, const QString &messageText);
 
 signals:
+    void stopRequested();
     void processRecreated(QProcess* newProcess);
     void progressEnd();
 

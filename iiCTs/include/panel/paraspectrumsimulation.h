@@ -7,6 +7,7 @@
 #include <QVBoxLayout>
 #include <QStackedWidget>
 #include <QLineEdit>
+#include <QPointer>
 
 #include "projectinfo.h"
 #include "paramfilemanager.h"
@@ -16,6 +17,7 @@ class MainWindow;
 class ChatPanel;
 class TerminalWidget;
 class TransSpectrum;
+class QProcess;
 
 class ParaSpectrumSimulation : public QWidget
 {
@@ -43,10 +45,12 @@ public slots:
 
 private:
     void PlaneRunFunction(const QString &targetPath, const ProjectInfo &info);
+    void stopRunningSimulation();
     QString detectGeant4ProjectPath(const ProjectInfo &info, TerminalWidget *term);
     QString detectGeant4InstallPath(TerminalWidget *term);
 
     MainWindow *mainWindow = nullptr;
+    QPointer<QProcess> activeGeant4Process;
     QLabel *statusLabel = nullptr;
     QVBoxLayout *m_mainLayout = nullptr;
     QStackedWidget *centralView = nullptr;

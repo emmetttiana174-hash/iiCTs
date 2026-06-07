@@ -534,6 +534,10 @@ MainWindow::MainWindow(const QString &username)
     process->start("bash");
     terminalWidget->setProcess(process);
     terminalWidget->appendLine("[Main] System initialized.");
+    if (paraSpecWidget)
+    {
+        paraSpecWidget->setMainWindow(this);
+    }
 
     connect(terminalWidget, &TerminalWidget::processRecreated, this, [=](QProcess *newProcess)
             { this->process = newProcess; });
