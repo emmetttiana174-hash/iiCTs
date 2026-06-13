@@ -14,7 +14,7 @@
 #include "PhysicsList.hh"
 #include "ActionInitialization.hh"
 
-// [MODIFICATION] 引入我们之前创建的嵌入辅助模块
+
 #include "EmbeddingHelper.hh"
 
 // [MODIFICATION] 确保包含必要的标准库头文件
@@ -38,8 +38,7 @@ int main(int argc, char** argv)
     }
 
     // ========================================================================
-    // 2. 独立模式逻辑 (基于您提供的代码)
-    //    如果程序执行到这里，说明不是嵌入模式。
+    // 2. 独立模式逻辑 
     // ========================================================================
     G4cout << "=== Program Start (Standalone Mode) ===" << G4endl;
 
@@ -47,7 +46,7 @@ int main(int argc, char** argv)
     analysisManager->SetVerboseLevel(1);
 
     // 判断是进入独立可视化模式，还是批处理模式
-    // (该逻辑来自您的源文件，判断很严谨，予以保留)
+ 
     bool isVisMode = false;
     if (argc == 1) {
         isVisMode = true; // 没有参数 → 默认可视化模式
@@ -80,7 +79,7 @@ int main(int argc, char** argv)
     runManager->SetUserInitialization(new ActionInitialization(detector));
     G4cout << "User initializations (Detector, Physics, Actions) are set." << G4endl;
 
-    // 这句 Initialize() 可以在这里，也可以在VisManager之后，对于G4.10+版本是兼容的
+    
     runManager->Initialize();
 
     // 初始化可视化，仅在独立可视化模式下

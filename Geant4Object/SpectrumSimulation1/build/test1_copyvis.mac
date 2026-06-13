@@ -1,0 +1,58 @@
+# Generated Visualization Mac file from GWL conversion
+# Conversion performed by iiCTs TransSpectrum module
+# This file includes visualization commands for Geant4
+
+# Physics processes configuration
+/testem/phys/EnableIonisation 1
+/testem/phys/EnableBremsstrahlung 1
+/testem/phys/EnableScatter 1
+/testem/phys/EnableAnnihilation 1
+
+# Input configuration
+/Input/setInputFilePath /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/xray/fray4/input/W_5_80kev_educate.txt
+
+# Output configuration
+/Output/setOutputFilePath /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/xray/fray4/xenergyoutput/test
+#/Output/setGridSizeX 1 mm
+#/Output/setGridSizeY 1 mm
+#/Output/setEnergyBinSize 0.5
+
+# Geometry configuration
+/Anode/setAnodeAngle 8
+/Anode/setAnodeMaterial W
+#/Target/setTargetMode 0
+#/Beam/setTubeVoltage 100 keV
+
+# Detector configuration
+/detector/setDetectorMaterial Galactic
+/detector/setDetectorZ 0.05 mm
+/detector/setDetectorX 10 mm
+/detector/setDetectorY 10 mm
+
+# Filter configuration
+/Filter/setFilter1Material Al
+/Filter/setFilter1Z 1 mm
+/Filter/Filter1Position 2 mm
+/Filter/setFilter2Material Cu
+/Filter/setFilter2Z 0.05 mm
+/Filter/Filter2Position 0 mm
+
+# Run simulation
+/run/initialize
+
+# Visualization commands
+/vis/open OGL 600x600-0+0
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/drawVolume
+/vis/viewer/set/viewpointThetaPhi -90. 0.
+/vis/viewer/zoom 30.0
+/vis/scene/add/axes 0 0 0 5 cm
+/vis/scene/add/trajectories
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+/vis/scene/endOfEventAction accumulate
+/vis/viewer/set/autoRefresh true
+/vis/verbose warnings

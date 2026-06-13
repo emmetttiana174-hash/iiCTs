@@ -1,0 +1,12 @@
+/testem/phys/addPhysics      emlivermore
+/Input/setInputFilePath /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/xray/fray4/input/W_5_80kev_educate.txt
+
+# 设置输出文件路径前缀
+/Output/setOutputFilePath /home/day/Geant4/geant4-install/share/Geant4/examples/extended/medical/xray/fray4/xenergyoutput/W_target_result
+/run/initialize
+# =========================
+/run/setCut          0.002 mm
+# 4. 发射粒子
+# =========================
+# 发射完 10 个事件
+/run/beamOn 500000
